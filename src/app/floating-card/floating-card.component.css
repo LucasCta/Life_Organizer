@@ -1,0 +1,32 @@
+.floating_card {
+  border-radius: 15px;
+  z-index: 4;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  top: 15px;
+  left: 16px;
+  position: absolute;
+  width: 40rem;
+}
+
+.floating_card_header {
+  cursor: move;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.floating_card_content_list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 12px 8px 12px 10px;
+  font-size: 18px;
+  transition: 0.2s;
+  user-select: none;
+}
+

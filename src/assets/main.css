@@ -1,0 +1,316 @@
+* {box-sizing: border-box;}
+html{
+  background: linear-gradient(#99ff99,#ffcc00) no-repeat center center fixed;
+  font-family: "Press Start 2P";
+  cursor: url("cursor/Normal Select.cur"), auto;
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blista {
+  border-radius: 15px;
+  z-index: 4;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  top: 15px;
+  left: 16px;
+}
+
+.hlista {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.lista{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 12px 8px 12px 10px;
+  font-size: 18px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.lista li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.lista li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.lista li:hover {
+  background: #ddd;
+}
+
+.lista li.checked{
+  background: lightgreen;
+  background-color: #35f2b6;
+}
+
+.panel{
+   display: none;
+   left: 100%;
+   font-size: 30px;
+   position: absolute;
+   background: #222;
+   width: 500px;
+}
+
+#password {
+  position: absolute;
+  top: 300px;
+  left: 845px;
+  background-color: lightblue;
+  border-width: 4px;
+  border-radius: 20px;
+  size: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+#rotinalist{
+  background-color: #222;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: pink;
+  font-size: 30px;
+}
+
+#rotinalist li:nth-child(odd) {
+  background: #444;
+}
+
+#experiencias {
+  left: 415px;
+  top: 520px;
+}
+
+#rotinalist li.dblchecked {
+    background: #ccc;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#OFCC {
+  left: 970px;
+}
+
+.OFCClinks {
+  font: 20px;
+}
+
+#atividades {
+  left: 640px;
+  top: 15px;
+}
+
+#atividadesheader {
+  background-color: #f24535;
+}
+
+#fzrprojeto{
+  top:300px;
+  left:1000px;
+}
+
+#facul{
+  top: 291px;
+  left: 886px;
+}
+
+#faculheader {
+  background-color: #35f25e;
+}
+
+#anotacoes{
+  left: 1550px;
+}
+
+#aniversariossheader {
+  padding: 10px;
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#aniversarios {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#aniversarios td {
+  text-align: left;
+  padding: 12px;
+}
+
+#aniversarios tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#aniversarios tr.aniv1:hover {
+  background-color: #a1a1a1;
+}
+
+#timerbox{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #222;
+  color: white;
+  border-color: #2196F3;
+  top: 313px;
+  left: 1224px;
+  width: 270px;
+  height: 125px;
+}
+
+#timerPause{
+  background: lightgreen;
+  border-radius: 4px;
+}
+
+#timerReset{
+  background: green;
+  border-radius: 4px;
+}
+
+#musicBtn {
+  top: 600px;
+  left: 965px;
+}
+
+.draggable{
+  position: absolute;
+}
+
+.move{
+  cursor: url("-/cursor/Move 1.cur"), auto;
+}
+
+.over{
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.over2{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 50vh;
+  width: 900px;
+}
+
+.over3{
+  overflow-y: scroll;
+  height: 380px;
+}
+.noButton{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  cursor: url("-/cursor/Move 2.cur"), auto;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  animation-name: fadeEffect;
+  animation-duration: 1.6s;
+}
+.modal-header {
+  padding: 20px;
+  font-size: 40px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  z-index: 10;
+  overflow: auto;
+  padding: 0;
+  top: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: fadeEffect2;
+  animation-duration: 1.6s;
+}
+
+.accordion { 
+  border-left-width: 6px;
+  padding-left: 5px;
+  border-style: hidden hidden hidden dashed;
+} 
+
+.modalBtn { 
+  border-left-width: 6px;
+  padding-left: 5px;
+  border-style: hidden hidden hidden solid;
+}
+
+@keyframes fadeEffect {
+  from {top: -1000px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@keyframes fadeEffect2 {
+  from {top: -300px; opacity: 0}
+  to {top: 20px; opacity: 1}
+}
+
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v9/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

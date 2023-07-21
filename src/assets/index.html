@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Life Organizer</title>
+</head>
+<body>
+
+  <div id="rotina" class="draggable blista">
+    <div id="rotinaheader" class="move hlista" style="background-color: orange; font-size: 20px; width: 600px;">Rotina</div>
+    <div class="tab" style="float: left; border-bottom-left-radius: 15%;">
+      <button id="OFCCDopen" class="OFCClinks" onclick="openOFCC(event, 'Active')">Active</button><br>
+      <button class="OFCClinks" onclick="openOFCC(event, 'Menu1')">Menu 1</button><br>
+      <button class="OFCClinks" onclick="openOFCC(event, 'Menu2')">Menu 2</button><br>
+    </div>
+    <div class ="over3" style="float: left; width: 490px;">
+      <div id="Active" class="OFCCcontent" style="display: block;">
+        <ul id="ativos" class="lista" style="float: left;"></ul>
+      </div>
+      <div id="Menu1" class="OFCCcontent" style="display: block;">
+        <ul class="lista" style="float: left; color: lightgrey;">
+          <li id="0" style="color: blueviolet;">Atividade Ex1</li> 
+          <li id="1" style="color: blueviolet;" class="modalBtn" onclick="openModal(ExampleModal)">Atividade Ex2</li>
+          <li>Atividade Ex3</li>
+        </ul>
+      </div>
+      <div id="Menu2" class="OFCCcontent" style="display: block;">
+        <ul class="lista" style="float: left; color: lightgrey;">
+          <li id="2" class="accordion" style="color: coral;">Exemplo Ex1</li>
+          <ul class="lista" style="padding: 0px 8px 0px 10px;">
+            <li>Exemplo Ex3.1</li>
+            <li>Exemplo Ex3.2</li>
+          </ul>
+          <li id="3" style="color: coral;">Exemplo Ex2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="atividades" class="draggable blista">
+    <div id="atividadesheader" class="move hlista">Afazeres</div>
+      <ul id="atividadeslist" class="lista over2" style="width: 800px">
+        <li>Tarefa 1</li>
+        <li>Tarefa 2</li> 
+        <li>Tarefa 3</li> 
+      </ul>
+  </div>
+
+  <div id ="aniversarioss" class ="draggable" style="left: 35px; top: 480px;"> 
+    <div id="aniversariossheader" class= "move">Aniversarios</div> 
+    <div id="aniover" class="over" style="height:200px;">
+      <table id="aniversarios">
+        <tbody>
+            <tr class="aniv1">
+                <td><button class="noButton" onclick="sortTable(0)">Data</button></td>
+                <td><button class="noButton" onclick="sortTable(1)">Nome</button></td>
+                <td><button class="noButton" onclick="sortTable(2)">Lugar</button></td>
+            </tr>
+            <tr><td class="itens">01/01</td><td>Pessoa A</td><td>Local 1</td></tr>
+            <tr><td class="itens">02/04</td><td>Pessoa D</td><td>Local 2</td></tr>
+            <tr><td class="itens">03/06</td><td>Pessoa C</td><td>Local 1</td></tr>
+            <tr><td class="itens">04/11</td><td>Pessoa B</td><td>Local 3</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="ExampleModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">Atividade Ex2</div>
+      <div class="modal-body">
+        <div class="tab">
+          <button id="ExampleModalDopen" class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+          <button class="tablinks active" onclick="openTab(event, 'Tab2')">Tab 2</button>
+        </div>
+        <div id="Tab1" class="tabcontent" style="display: none;">
+          <ul class="lista">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+        <div id="Tab2" class="tabcontent over" style="display: block;">
+          <ul class="lista">
+            <li>Test 1</li>
+            <li>Test 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"> </script>
+
+</body>
